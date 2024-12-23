@@ -1,0 +1,21 @@
+﻿<Window x:Class="intrest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:intrest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Beginkapitaal" Width="100" Height="50" Margin="31,89,669,295"/>
+        <Label Content="Gewenst kapitaal" Width="100" Height="50" Margin="31,162,669,222"/>
+        <Label Content="Intrestvoet" Width="100" Height="50" Margin="31,224,669,160"/>
+        <TextBox x:Name="beginTextBox" Height="50" Margin="150,89,472,295"/>
+        <TextBox x:Name="endTextBox" Height="50" Margin="150,162,472,222"/>
+        <TextBox x:Name="intrestTextBox" Height="50" Margin="150,224,472,160"/>
+        <TextBox x:Name="resultTextBlock" IsEnabled="False" Margin="418,10,45,109"/>
+        <Button x:Name="calculateButton" Width="100" Height="25" Content="Bereken" Margin="400,342,300,42" Click="calculateButton_Click"/>
+        <Button x:Name="eraseButton" Width="100" Height="25" Content="Wissen" Margin="524,342,176,42" Click="eraseButton_Click"/>
+        <Button x:Name="closeButton" Width="100" Height="25" Content="Afsluiten" Margin="655,342,45,42" Click="closeButton_Click" RenderTransformOrigin="0.515,1.159"/>
+    </Grid>
+</Window>
